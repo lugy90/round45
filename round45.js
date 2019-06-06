@@ -1,5 +1,5 @@
 function round45(fl) {
-	if (typeof fl !== 'number' || fl < 0) {console.log('Error: the parameter can only be positive.'); return;}
+	if (typeof fl !== 'number' || fl < 0) {console.error('Error: the parameter can only be positive.'); return;}
 	if (typeof fl === 'number' && fl%1 === 0) {console.log('result', fl); return fl;}
 	var mid = fl.toString();
 	var dotIdx = mid.indexOf('.');
